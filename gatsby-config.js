@@ -1,6 +1,8 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.svenskahemsida.se`, //change later to a proper one
+    siteTitle: `svenskahemsidor`,
+    author: `Daniil Krutogolov`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,6 +34,13 @@ module.exports = {
         isTSX: true, // defaults to false
         jsxPragma: `jsx`, // defaults to "React"
         allExtensions: true, // defaults to false
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [`Raleway`, `Josefin Sans`],
+        display: "swap",
       },
     },
   ],
