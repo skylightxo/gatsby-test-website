@@ -1,6 +1,5 @@
 import { Link } from "gatsby"
 import React from "react"
-
 interface Props{
   siteTitle?: string;
 }
@@ -14,6 +13,8 @@ const Header: React.FC<Props> = ({ siteTitle = 'svenskahemsida' }) => (
           color: `black`,
           fontFamily: `Josefin Sans`,
           textDecoration: `none`,
+          fontWeight: 500,
+          fontSize: 18
         }}
       >
         {siteTitle}
