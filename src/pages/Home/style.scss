@@ -1,0 +1,67 @@
+section{
+    padding: 0 1.0875rem 1.45rem;
+}
+
+#about, #packages{
+    background: rgba(196, 196, 196, 0.1);
+}
+
+#packages{
+    padding-top: 180px;
+}
+
+#webhosting, #wordpress{
+    margin-top: 100px;
+}
+
+#faq{
+    margin-top: 410px;
+    position: relative;
+}
+
+.faq__image-container{
+    background: url('../../images/woman.png');
+    width: 100%;
+    height: 310px;
+    background-position: top;
+    position: absolute;
+    left: 0%;
+    bottom: 104%;
+}
+
+.faq__heading{
+    font-weight: bold;
+    font-size: 20px;
+    line-height: 115.7%;
+}
+
+.faq__text{
+    font-size: 16px;
+    line-height: 147.7%;
+    padding-bottom: 62px;
+}
+
+.faq__text-container{
+    margin-left: 20px;
+    margin-right: 15px;
+}
+
+.support__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    & p:first-of-type{
+        font-size: 20px;
+        font-weight: bold;
+        margin: 0;
+    }
+    & p:nth-of-type(2){
+        font-size: 18px;
+    }
+    & a{
+        font-size: 18px;
+        color: #000;
+        font-weight: 500;
+    }
+}

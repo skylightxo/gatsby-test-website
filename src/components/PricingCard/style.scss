@@ -1,0 +1,41 @@
+.pricing-card{
+    &__container{
+        background: rgba(28, 91, 255, 0.05);
+        border-radius: 8px;
+        &_horizontal{
+            display: flex;
+            justify-content: space-around;
+            padding-bottom: 1rem;
+            padding-top: 1rem;
+            & p{
+                margin: 0;
+            }
+        }
+    }
+    &__row{
+        display: flex;
+        justify-content: space-between;
+        margin: 0 28px;
+        padding-top: 0.7rem;
+        padding-bottom: 0.7rem;
+        margin-bottom: 0;
+        align-items: center;
+        & p{
+            margin-bottom: 0;
+        }
+    }
+    &__column{
+        display: flex;
+        flex-direction: column;
+    }
+    &__line{
+        &_vertical{
+            border: 1px solid #D6D6D6;
+            width: 80%;
+            margin: 0 10%;
+        }
+        &_horizontal{
+            border: 1px solid #E5E5E5;
+        }
+    }
+}

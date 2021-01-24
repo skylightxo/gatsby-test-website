@@ -4,13 +4,12 @@ import { CarouselCard } from '../CarouselCard';
 import { rem } from "../../utils"
 
 export const CarouselComponent = () => {
-
 return(
-    <Carousel autoplay autoplaySpeed={5000}>
+    <Carousel autoplay autoplaySpeed={7000}>
         <CarouselCard imageSrc="First-carousel-bg.png" imageAlt="sveahemsidor" buttonText="Skapa Hemsida" 
-                text={<p>
+                text={<p style={{lineHeight: "39.4px"}}>
                     <span style={{fontFamily: "Raleway", fontSize: `${rem(34)}`, fontWeight: 700, color: "#1C5BFF" }}>Sveahemsidor</span> <br />
-                    <span style={{fontFamily: "Raleway", fontSize: `${rem(34)}`}}>webbhotell och optimering</span>
+                    <span style={{fontFamily: "Raleway", fontSize: `${rem(34)}`}}>webbhotell <br /> och optimering</span>
                 </p>} />
         <CarouselCard imageSrc="Second-carousel-bg.png" imageAlt="webbhotell" buttonText="Läs Mer Webbhotell" 
                 text={<p>

@@ -1,13 +1,3 @@
-import React from "react"
-import Layout from "../components/layout"
-import SEO from "../components/seo"
-import { CarouselComponent } from "../components/Carousel";
+import { IndexPage } from './Home';
 
-const IndexPage = () => (
-  <Layout>
-    <SEO title="sveahemsidor" />
-    <CarouselComponent />
-  </Layout>
-)
-
-export default IndexPage
+export { IndexPage as default };

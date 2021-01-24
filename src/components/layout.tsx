@@ -27,7 +27,6 @@ const Layout: React.FC<Props> = ({ children }) => {
         style={{
           margin: `0 auto`,
           maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
         }}
       >
         <main>{children}</main>
@@ -36,9 +35,8 @@ const Layout: React.FC<Props> = ({ children }) => {
             marginTop: `2rem`,
           }}
         >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
+        <div className="footer__image" />
+        <p className="footer__text">© 2021 sveahemsidor <br /> All rights reserved.</p>
         </footer>
       </div>
     </>
