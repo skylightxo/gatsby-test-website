@@ -40,8 +40,21 @@ module.exports = {
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [`Raleway\:400,500,600,700,900`, `Josefin Sans`],
+        fonts: [`Raleway\:300,400,500,600,700,900`, `Josefin Sans`],
         display: "swap",
+      },
+    },
+    {
+      resolve: "gatsby-plugin-htaccess",
+      options: {
+        RewriteBase: true,
+        https: false,
+        www: false,
+        SymLinksIfOwnerMatch: true,
+        host: "sveahemsidor.se/", // if 'www' is set to 'false', be sure to also remove it here!
+        ErrorDocument: `
+          ErrorDocument 404 /404/index.html
+          `,
       },
     },
   ],

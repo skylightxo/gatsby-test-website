@@ -1,15 +1,16 @@
-import React from "react"
+import React, { useContext } from "react"
+import { MenuProvider } from '../../contexts/MenuContext/';
 import { useStaticQuery, graphql } from "gatsby"
 import 'antd/dist/antd.css';
 
-import Header from "./header"
+import { Header } from "../"
 import "./layout.css"
 
 interface Props{
   children: React.ReactNode,
 }
 
-const Layout: React.FC<Props> = ({ children }) => {
+export const Layout: React.FC<Props> = ({ children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -21,8 +22,8 @@ const Layout: React.FC<Props> = ({ children }) => {
   `)
 
   return (
-    <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
+    <MenuProvider>
+      <Header siteTitle={data.site.siteMetadata?.title || `sveahemsidor`} />
       <div
         style={{
           margin: `0 auto`,
@@ -39,8 +40,6 @@ const Layout: React.FC<Props> = ({ children }) => {
         <p className="footer__text">© 2021 sveahemsidor <br /> All rights reserved.</p>
         </footer>
       </div>
-    </>
+    </MenuProvider>
   )
 }
-
-export default Layout

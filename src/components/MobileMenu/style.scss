@@ -1,0 +1,51 @@
+@import "../mixins.scss";
+
+.mobile-menu{
+    &__container{
+        left: rem(-960px);
+        position: absolute;
+        padding: rem(55px) 0 rem(36px) rem(36px);
+        background-color: #1C5BFF;
+        color: #fff;
+        height: 100%;
+        &_active{
+            padding: rem(55px) 0 rem(36px) rem(36px);
+            background-color: #1C5BFF;
+            color: #fff;
+            height: 100%;
+            left: 0;
+        }
+    }
+    &__list{
+        list-style-type: none !important; 
+        margin: 0;
+    }
+    &__link{
+    margin-bottom: rem(31px);
+        & a{
+            font-family: Raleway;
+            font-style: normal;
+            font-weight: 300;
+            font-size: rem(32px);
+            line-height: 95.7%;
+            color: #fff;
+        }
+    }
+    &__support-block{
+        margin-top: rem(54px);
+        font-weight: 300;
+        & p:first-of-type{
+            font-size: rem(20px);
+            margin: 0;
+        }
+        & p:nth-of-type(2){
+            font-size: rem(16px);
+            margin-bottom: rem(9px);
+        }
+        & a{
+            font-size: rem(18px);
+            font-weight: 600;
+            color: #fff;
+        }
+    }
+}

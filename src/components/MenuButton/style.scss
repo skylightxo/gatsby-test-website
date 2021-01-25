@@ -1,0 +1,36 @@
+.menu-button{
+    &__container{
+    display: flex; 
+    width: 24px;
+    flex-direction: column;
+    align-items: center;
+    transition: rotate 0.7s;
+        &_active{
+            transition: flex-direction 0.7s;   
+            display: flex; 
+            width: 24px;
+            flex-direction: row;
+            align-items: center;
+        }
+    }
+    &__button:first-of-type{
+        margin-bottom: 5px;
+    }
+    &__button_active:first-of-type{
+        margin-right: 5px;
+    }
+    &__button{
+        width: 5px; 
+        height: 5px;
+        border-radius: 50%;
+        background: #1C5BFF;
+        transition: background 1s;
+        &_active{
+            background: #FFA800;
+            transition: background 1s;
+            width: 5px; 
+            height: 5px;
+            border-radius: 50%;
+        }
+    }
+}
