@@ -11,9 +11,9 @@ export const MobileMenu: React.FC<Props> = ({  }) => {
     const [state]: any = useContext(MenuContext);
     const menuOpened = state.menuOpened;
 
-    useEffect(() => {
-        menuOpened ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto"; 
-    }, [menuOpened])
+    // useEffect(() => {
+    //     menuOpened ? document.body.style.overflow = "hidden" : document.body.style.overflow = "auto"; 
+    // }, [menuOpened])
 
     return(
         <div className={`mobile-menu__container${menuOpened ? "_active" : ""}`}>
