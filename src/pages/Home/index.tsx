@@ -16,7 +16,7 @@ const IndexPage = () => {
       <section id="carousel">
         <CarouselComponent />
       </section>
-      <Image src="curve.svg" alt="" style={{marginBottom: 0}} />
+      <Image src="curve.svg" alt="" style={{marginBottom: 0, width: "100%"}} />
       <section id="about">
         <Image src="line.svg" alt="" style={{marginBottom: 20, marginLeft: 30}}/>
         <p style={{fontFamily: "Raleway", fontWeight: 700, fontSize: 20, marginBottom: 57, lineHeight: "115.7%", marginLeft: 30}}>Varför företag väljer<br /><span style={{color: "#1C5BFF"}}>sveahemsidor</span>?</p>
@@ -68,7 +68,7 @@ const IndexPage = () => {
         <PackageCard title="Professionell hemsida" price="149kr/Mån" icon={<HeartOutlined style={{color: "#1C5BFF"}} />} services={["Enkelt hemsidesverktyg", "Import befintlig", "Hemsida", "100+ färdiga mallar", "HTTPS", "Mobilanpassad hemsida", "Guider", "E-post", "Obegränsat antal sidor", "10 GB Lagringsutrymme", "Eget domännamn", "Flerspråksstöd"]} />
         <PackageCard title="E-handel" price="199kr/Mån" icon={<StarOutlined style={{color: "#1C5BFF"}} />} services={["Enkelt hemsidesverktyg", "Komplett", "E-handelsmodul", "Import befintlig", "Hemsida", "100+ färdiga mallar", "HTTPS", "Mobilanpassad hemsida", "Guider", "E-post", "Obegränsat antal sidor", "100 GB Lagringsutrymme", "Eget domännamn", "Flerspråksstöd"]} />
       </section>
-      <Image src="curve.svg" alt="" style={{marginBottom: 0, transform: "rotate(180deg) scaleX(-1)"}} />
+      <Image src="curve.svg" alt="" style={{marginBottom: 0, transform: "rotate(180deg) scaleX(-1)", width: "100%"}} />
       <section id="webhosting">
         <Image src="line.svg" alt="" style={{marginLeft: 20}}/>
         <p style={{fontSize: 20, fontWeight: "bold", lineHeight: "115.7%", marginLeft: 20, marginBottom: 46}}>Stabila <span style={{color: "#1C5BFF"}}>webbhotell</span> <br /> för din verksamhet</p>
