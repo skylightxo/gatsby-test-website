@@ -1,16 +1,11 @@
-import React, { useContext, Suspense } from "react";
-import { Spin } from 'antd';
-import { CarouselComponent, AboutCard, Layout, DecorativeEllipses } from "../../components/";
+import React, { useContext } from "react";
+import { CarouselComponent, AboutCard, Layout, DecorativeEllipses, PackageCard, PricingCard, ServiceCard } from "../../components/";
 import { MenuContext } from '../../contexts/MenuContext';
 import Image from '../../components/image';
 import SEO from '../../components/seo';
 import { ExperimentOutlined, LayoutOutlined, GiftOutlined, CheckOutlined, HeartOutlined, StarOutlined } from "@ant-design/icons";
 import "./style.scss";
 import { MobileMenu } from "../../components/MobileMenu";
-
-const PackageCard = React.lazy(() => import('../../components/PackageCard').then(m => ({ default: m.PackageCard })));
-const PricingCard = React.lazy(() => import('../../components/PricingCard').then(m => ({ default: m.PricingCard })));
-const ServiceCard = React.lazy(() => import('../../components/ServiceCard').then(m => ({ default: m.ServiceCard })));
 
 const IndexPage = () => {
   const [state] = useContext(MenuContext);
@@ -74,11 +69,9 @@ const IndexPage = () => {
         </div>
       </section>
       <section id="packages">
-        <Suspense fallback={<Spin />}>
           <PackageCard title="BAS" price="Gratis!" icon={<GiftOutlined style={{color: "#1C5BFF"}} />} services={["Enkelt hemsidesverktyg", "Importera och redigera", "Befintlig sida", "100+ färdiga mallar", "Mobilanpassad hemsida", "Guider", "Obegränsat antal sidor", "2 GB Lagringsutrymme"]} />
           <PackageCard title="Professionell hemsida" price="149kr/Mån" icon={<HeartOutlined style={{color: "#1C5BFF"}} />} services={["Enkelt hemsidesverktyg", "Import befintlig", "Hemsida", "100+ färdiga mallar", "HTTPS", "Mobilanpassad hemsida", "Guider", "E-post", "Obegränsat antal sidor", "10 GB Lagringsutrymme", "Eget domännamn", "Flerspråksstöd"]} />
           <PackageCard title="E-handel" price="199kr/Mån" icon={<StarOutlined style={{color: "#1C5BFF"}} />} services={["Enkelt hemsidesverktyg", "Komplett", "E-handelsmodul", "Import befintlig", "Hemsida", "100+ färdiga mallar", "HTTPS", "Mobilanpassad hemsida", "Guider", "E-post", "Obegränsat antal sidor", "100 GB Lagringsutrymme", "Eget domännamn", "Flerspråksstöd"]} />
-        </Suspense>
       </section>
       <Image className="curve-img" src="curve.svg" alt="" style={{marginBottom: 0, transform: "rotate(180deg) scaleX(-1)", width: "100%"}} />
       <section id="webhosting">
@@ -86,7 +79,6 @@ const IndexPage = () => {
           <Image src="line.svg" alt="" style={{marginLeft: 20}}/>
           <p style={{fontSize: 20, fontWeight: "bold", lineHeight: "115.7%", marginLeft: 20, marginBottom: 46}}>Stabila <span style={{color: "#1C5BFF"}}>webbhotell</span> <br /> för din verksamhet</p>
         </div>
-        <Suspense fallback={<Spin />}>
           <PricingCard type="vertical" />
           <ServiceCard title="Max domännamn" type="triple" content={["1", "5", "30"]} />
           <ServiceCard title="Gratis registrering av domän" type="triple" content={[<CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>]} />
@@ -103,14 +95,12 @@ const IndexPage = () => {
           <ServiceCard title="Telefonsupport" type="triple" content={[<CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>]} />
           <ServiceCard title="Website Builder" type="triple" content={["1", "50", "∞"]} />
           <ServiceCard title="30 dagar pengarna tillbaka" type="triple" content={[<CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>]} />
-        </Suspense>
       </section>
       <section id="wordpress">
         <div className="title">
           <Image src="line.svg" alt="" style={{marginLeft: 20}}/>
           <p style={{fontSize: 20, fontWeight: "bold", lineHeight: "115.7%", marginLeft: 20, marginBottom: 46}}>Blixtsnabb site <br />med våra optimerade <br />webbhotell för <span style={{color: "#1C5BFF"}}>wordpress</span></p>
         </div>
-        <Suspense fallback={<Spin />}>
           <PricingCard type="horizontal" />
           <ServiceCard title="Domännamn" type="double" content={["1 site", "Multisite stöd, 3 domännamn"]} />
           <ServiceCard title="Trafikgräns" type="double" content={["350GB", "1TB"]} />
@@ -126,7 +116,6 @@ const IndexPage = () => {
           <ServiceCard title="Full support" type="double" content={[<CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>]} />
           <ServiceCard title="Installation" type="double" content={["Gratis", "Gratis"]} />
           <ServiceCard title="30 Dagar pengarna tillbaka garanti " type="double" content={[<CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>]} />
-        </Suspense>
       </section>
       <section id="faq">
         <div className="faq__image-container" />
