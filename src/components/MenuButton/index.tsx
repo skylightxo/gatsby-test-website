@@ -5,9 +5,7 @@ import './style.scss';
 export const MenuButton = () => {
     const [state, setState] = useContext<any>(MenuContext);
     const menuOpened = state.menuOpened;
-    console.log(state, setState);
     
-
     const clickHandler = () => {
         setState({ menuOpened: !menuOpened });
     }
