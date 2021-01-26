@@ -1,5 +1,5 @@
 import React, { useContext } from "react";
-import { CarouselComponent, AboutCard, PackageCard, PricingCard, ServiceCard, Layout } from "../../components/";
+import { CarouselComponent, AboutCard, PackageCard, PricingCard, ServiceCard, Layout, DecorativeEllipses } from "../../components/";
 import { MenuContext } from '../../contexts/MenuContext';
 import Image from '../../components/image';
 import SEO from '../../components/seo';
@@ -13,65 +13,72 @@ const IndexPage = () => {
     <Layout>
       <SEO title="sveahemsidor" />
       <MobileMenu state={state} />
+      <DecorativeEllipses  />
       <section id="carousel">
         <CarouselComponent />
       </section>
-      <Image src="curve.svg" alt="" style={{marginBottom: 0, width: "100%"}} />
+      <Image className="curve-img" src="curve.svg" alt="" style={{marginBottom: 0, width: "100%"}} />
       <section id="about">
-        <Image src="line.svg" alt="" style={{marginBottom: 20, marginLeft: 30}}/>
-        <p style={{fontFamily: "Raleway", fontWeight: 700, fontSize: 20, marginBottom: 57, lineHeight: "115.7%", marginLeft: 30}}>Varför företag väljer<br /><span style={{color: "#1C5BFF"}}>sveahemsidor</span>?</p>
-        <AboutCard icon={<ExperimentOutlined />} headingText="Skapa sidan själv" description={
-          <p>Vårt sitebuilder verktyg innehåller allt du behöver för att bygga en proffsig hemsida. <br /> En befintlig hemsida kan enkelt importeras och ändras. Skapa egna sidor eller ta hjälp av våra färdiga mallar</p>
-        }/>
-        <AboutCard icon={<LayoutOutlined />} headingText="Inga forkunskaper kravs" description={
-          <p>Drag n Drop, ingen Kodning eller tidigare erfarenheter kravs. Verktyget ar mycket enkelt och pedagogiskt att anvanda</p>
-        }/>
-        <AboutCard icon={<GiftOutlined  />} headingText="Allt du behöver" description={
-          <>
-            <p style={{marginBottom: 5}}>
-              <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
-              <span>Sökmotoroptimering</span>
-            </p>
-            <p style={{marginBottom: 5}}>
-              <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
-              <span>Importfunktion</span>
-            </p>
-            <p style={{marginBottom: 5}}>
-              <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
-              <span>SSL / HTTPS</span>
-            </p>
-            <p style={{marginBottom: 5}}>
-              <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
-              <span>Telefon support</span>
-            </p>
-            <p style={{marginBottom: 5}}>
-              <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
-              <span>Mobilanpassning</span>
-            </p>
-            <p style={{marginBottom: 5}}>
-              <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
-              <span>E-Handel</span>
-            </p>
-            <p style={{marginBottom: 5}}>
-              <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
-              <span>Flerspråsstöd</span>
-            </p>
-            <p style={{marginBottom: 5}}>
-              <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
-              <span>Kundsidor / Intranet</span>
-            </p>
-          </>
-        }/>
+        <div className="title">
+          <Image src="line.svg" alt="" style={{marginBottom: 20, marginLeft: 30}}/>
+          <p style={{fontFamily: "Raleway", fontWeight: 700, fontSize: 20, marginBottom: 57, lineHeight: "115.7%", marginLeft: 30}}>Varför företag väljer<br /><span style={{color: "#1C5BFF"}}>sveahemsidor</span>?</p>
+        </div>
+        <div className="about-cards__container">
+          <AboutCard icon={<ExperimentOutlined />} headingText="Skapa sidan själv" description={
+            <p>Vårt sitebuilder verktyg innehåller allt du behöver för att bygga en proffsig hemsida. <br /> En befintlig hemsida kan enkelt importeras och ändras. Skapa egna sidor eller ta hjälp av våra färdiga mallar</p>
+          }/>
+          <AboutCard icon={<LayoutOutlined />} headingText="Inga forkunskaper kravs" description={
+            <p>Drag n Drop, ingen Kodning eller tidigare erfarenheter kravs. Verktyget ar mycket enkelt och pedagogiskt att anvanda</p>
+          }/>
+          <AboutCard icon={<GiftOutlined  />} headingText="Allt du behöver" description={
+            <>
+              <p style={{marginBottom: 5}}>
+                <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
+                <span>Sökmotoroptimering</span>
+              </p>
+              <p style={{marginBottom: 5}}>
+                <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
+                <span>Importfunktion</span>
+              </p>
+              <p style={{marginBottom: 5}}>
+                <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
+                <span>SSL / HTTPS</span>
+              </p>
+              <p style={{marginBottom: 5}}>
+                <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
+                <span>Telefon support</span>
+              </p>
+              <p style={{marginBottom: 5}}>
+                <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
+                <span>Mobilanpassning</span>
+              </p>
+              <p style={{marginBottom: 5}}>
+                <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
+                <span>E-Handel</span>
+              </p>
+              <p style={{marginBottom: 5}}>
+                <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
+                <span>Flerspråsstöd</span>
+              </p>
+              <p style={{marginBottom: 5}}>
+                <span style={{marginRight: 10}}><CheckOutlined style={{color: "#1C5BFF"}}/></span>
+                <span>Kundsidor / Intranet</span>
+              </p>
+            </>
+          }/>
+        </div>
       </section>
       <section id="packages">
         <PackageCard title="BAS" price="Gratis!" icon={<GiftOutlined style={{color: "#1C5BFF"}} />} services={["Enkelt hemsidesverktyg", "Importera och redigera", "Befintlig sida", "100+ färdiga mallar", "Mobilanpassad hemsida", "Guider", "Obegränsat antal sidor", "2 GB Lagringsutrymme"]} />
         <PackageCard title="Professionell hemsida" price="149kr/Mån" icon={<HeartOutlined style={{color: "#1C5BFF"}} />} services={["Enkelt hemsidesverktyg", "Import befintlig", "Hemsida", "100+ färdiga mallar", "HTTPS", "Mobilanpassad hemsida", "Guider", "E-post", "Obegränsat antal sidor", "10 GB Lagringsutrymme", "Eget domännamn", "Flerspråksstöd"]} />
         <PackageCard title="E-handel" price="199kr/Mån" icon={<StarOutlined style={{color: "#1C5BFF"}} />} services={["Enkelt hemsidesverktyg", "Komplett", "E-handelsmodul", "Import befintlig", "Hemsida", "100+ färdiga mallar", "HTTPS", "Mobilanpassad hemsida", "Guider", "E-post", "Obegränsat antal sidor", "100 GB Lagringsutrymme", "Eget domännamn", "Flerspråksstöd"]} />
       </section>
-      <Image src="curve.svg" alt="" style={{marginBottom: 0, transform: "rotate(180deg) scaleX(-1)", width: "100%"}} />
+      <Image className="curve-img" src="curve.svg" alt="" style={{marginBottom: 0, transform: "rotate(180deg) scaleX(-1)", width: "100%"}} />
       <section id="webhosting">
-        <Image src="line.svg" alt="" style={{marginLeft: 20}}/>
-        <p style={{fontSize: 20, fontWeight: "bold", lineHeight: "115.7%", marginLeft: 20, marginBottom: 46}}>Stabila <span style={{color: "#1C5BFF"}}>webbhotell</span> <br /> för din verksamhet</p>
+        <div className="title">
+          <Image src="line.svg" alt="" style={{marginLeft: 20}}/>
+          <p style={{fontSize: 20, fontWeight: "bold", lineHeight: "115.7%", marginLeft: 20, marginBottom: 46}}>Stabila <span style={{color: "#1C5BFF"}}>webbhotell</span> <br /> för din verksamhet</p>
+        </div>
         <PricingCard type="vertical" />
         <ServiceCard title="Max domännamn" type="triple" content={["1", "5", "30"]} />
         <ServiceCard title="Gratis registrering av domän" type="triple" content={[<CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>]} />
@@ -90,8 +97,10 @@ const IndexPage = () => {
         <ServiceCard title="30 dagar pengarna tillbaka" type="triple" content={[<CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>]} />
       </section>
       <section id="wordpress">
-        <Image src="line.svg" alt="" style={{marginLeft: 20}}/>
-        <p style={{fontSize: 20, fontWeight: "bold", lineHeight: "115.7%", marginLeft: 20, marginBottom: 46}}>Blixtsnabb site <br />med våra optimerade <br />webbhotell för <span style={{color: "#1C5BFF"}}>wordpress</span></p>
+        <div className="title">
+          <Image src="line.svg" alt="" style={{marginLeft: 20}}/>
+          <p style={{fontSize: 20, fontWeight: "bold", lineHeight: "115.7%", marginLeft: 20, marginBottom: 46}}>Blixtsnabb site <br />med våra optimerade <br />webbhotell för <span style={{color: "#1C5BFF"}}>wordpress</span></p>
+        </div>
         <PricingCard type="horizontal" />
         <ServiceCard title="Domännamn" type="double" content={["1 site", "Multisite stöd, 3 domännamn"]} />
         <ServiceCard title="Trafikgräns" type="double" content={["350GB", "1TB"]} />

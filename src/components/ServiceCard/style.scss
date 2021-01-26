@@ -32,3 +32,25 @@
         }
     }
 }
+
+@media(min-width: 920px){
+    .service-card{
+        &__supercontainer{
+            display: flex;    
+        }
+        &__column p:first-of-type{
+            display: none;
+        }
+        &__container{
+            width: 60%;
+        }
+        &__title{
+            width: 320px;
+        }
+        &__line{
+            width: 100%;
+            margin: 0;
+            margin-bottom: 20px;
+        }
+    }
+}

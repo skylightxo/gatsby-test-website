@@ -23,7 +23,7 @@ export const Layout: React.FC<Props> = ({ children }) => {
 
   return (
     <MenuProvider>
-      <Header siteTitle={data.site.siteMetadata?.title || `sveahemsidor`} />
+      <Header siteTitle={data.site.siteMetadata?.title || `sveahemsidor.`} />
       <div
         style={{
           margin: `0 auto`,

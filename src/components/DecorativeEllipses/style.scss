@@ -1,0 +1,36 @@
+
+@media(min-width: 920px){
+    .first-ellipse{
+        position: absolute;
+        width: 1172px;
+        height: 1172px;
+        left: 440px;
+        top: 251px;
+        background: radial-gradient(50% 50% at 50% 50%, #C4C4C4 0%, rgba(196, 196, 196, 0) 100%);
+        opacity: 0.21;
+        filter: blur(20px);
+    }
+
+    .second-ellipse{
+        position: absolute;
+        width: 1172px;
+        height: 1172px;
+        left: -550px;
+        top: 1123px;
+        background: radial-gradient(50% 50% at 50% 50%, #C4C4C4 0%, rgba(28, 91, 255, 0) 100%);
+        opacity: 0.2;
+        filter: blur(20px);
+    }
+
+    .third-ellipse{
+        position: absolute;
+        width: 1172px;
+        height: 1172px;
+        left: 407px;
+        top: 3314px;
+
+        background: radial-gradient(50% 50% at 50% 50%, #C4C4C4 0%, rgba(196, 196, 196, 0) 100%);
+        opacity: 0.2;
+        filter: blur(20px);
+    }
+}

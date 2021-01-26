@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     siteUrl: `https://www.svenskahemsida.se`, //change later to a proper one
-    siteTitle: `sveahemsidor`,
+    siteTitle: `sveahemsidor.`,
     author: `Daniil Krutogolov`,
   },
   plugins: [

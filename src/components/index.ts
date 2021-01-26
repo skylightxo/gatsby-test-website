@@ -7,5 +7,6 @@ import { ServiceCard } from './ServiceCard';
 import { Header } from './Header';
 import { Layout } from './Layout';
 import { MobileMenu } from './MobileMenu';
+import { DecorativeEllipses } from './DecorativeEllipses';
 
-export { AboutCard, CarouselComponent, CarouselCard, PackageCard, PricingCard, ServiceCard, Header, Layout };
+export { AboutCard, CarouselComponent, CarouselCard, PackageCard, PricingCard, ServiceCard, Header, Layout, DecorativeEllipses, MobileMenu };

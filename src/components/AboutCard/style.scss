@@ -38,3 +38,23 @@
         line-height: 147.7%;
     }
 }
+
+@media(min-width: 920px){
+    .about-card{
+        &__container{
+            margin-right: rem(66px);
+            &:last-of-type{
+                margin-right: 0;
+            }
+        }
+        &__icon-container{
+            background-color: #fff;
+            box-shadow: 0px 8px 14px rgba(0, 0, 0, 0.11);
+        }
+        &__heading{
+            width: rem(180px);
+            font-size: rem(20px);
+            line-height: 95.7%;
+        }
+    }
+}
