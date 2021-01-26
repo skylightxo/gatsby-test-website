@@ -1,0 +1,15 @@
+header{
+    display: flex;
+    align-items: center;
+    padding-left: 31px;
+    padding-top: 22px;
+    & h1{
+        margin: 0 0 0 10px;
+    }
+}
+
+@media(min-width: 920px){
+    header h1{
+        margin-left: 45%;
+    }
+}

@@ -1,4 +1,4 @@
-
+@import '../mixins.scss';
 
 @media(min-width: 920px){
     .carousel-card{
@@ -20,7 +20,16 @@
         }
         &__text{
             width: 400px;
-            font-size: rem(54px);
+            &:nth-child(1){
+                & span{
+                    font-size: 54px !important;
+                }
+            }
+            &:nth-child(2), &:nth-child(3){
+                & span:first-child{
+                    font-size: 54px !important;
+                }
+            }
             & span:first-of-type{
                 line-height: 105.7%;
             }
