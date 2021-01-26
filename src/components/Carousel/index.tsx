@@ -8,7 +8,7 @@ export const CarouselComponent = () => {
     const isDesktop = window.screen.width > 920;
     return(
         <Carousel autoplay autoplaySpeed={7000} effect={"fade"}>
-            <CarouselCard imageSrc="First-carousel-bg.png" imageAlt="sveahemsidor" buttonText="Skapa Hemsida" 
+            <CarouselCard imageSrc="First-carousel-bg.png" imageAlt="sveahemsidor" buttonText="Skapa Hemsida" imageLoading="eager"
                     text={<p className="carousel-card__text" style={{lineHeight: "39.4px"}}>
                         <span style={{fontFamily: "Raleway", fontSize: `${!isDesktop ? rem(34) : rem(54)}`, fontWeight: 700, color: "#1C5BFF" }}>Sveahemsidor</span> <br />
                         <span style={{fontFamily: "Raleway", fontSize: `${!isDesktop ? rem(34) : rem(54)}`}}>webbhotell <br /> och optimering</span>

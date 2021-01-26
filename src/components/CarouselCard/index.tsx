@@ -8,15 +8,17 @@ interface Props{
     imageAlt: string,
     text: React.ReactNode
     buttonText: string
+    imageLoading?: string
 }
 
-export const CarouselCard: React.FC<Props> = ({ imageSrc, imageAlt, text, buttonText }) => {
+export const CarouselCard: React.FC<Props> = ({ imageSrc, imageAlt, text, buttonText, imageLoading }) => {
     return(
         <div className="carousel-card__container">
             <Image 
             className="carousel-card__image"
             src={imageSrc}
             alt={imageAlt}
+            loading={imageLoading}
             />
             <div style={{marginBottom: 64}}>
                 <Image src="line.svg" alt=""/>
