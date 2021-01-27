@@ -638,5 +638,6 @@ footer{
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+    overflow: hidden;
   }
 }
