@@ -34,7 +34,7 @@ export const ServiceCard: React.FC<Props> = ({ type, title, content }) => {
                             </div>
                             <div className="service-card__column" style={{flex: 1}}>
                                 <p>Premium</p>
-                                <p style={{width: 140}}>{content[1]}</p>
+                                <p className="service-card__double-type-second-col">{content[1]}</p>
                             </div>
                     </div>}
                 </div>

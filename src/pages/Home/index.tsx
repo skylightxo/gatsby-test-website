@@ -75,7 +75,7 @@ const IndexPage = () => {
       </section>
       <Image className="curve-img" src="curve.svg" alt="" style={{marginBottom: 0, transform: "rotate(180deg) scaleX(-1)", width: "100%"}} />
       <section id="webhosting">
-        <div className="title">
+        <div className="title title-second">
           <Image src="line.svg" alt="" style={{marginLeft: 20}}/>
           <p style={{fontSize: 20, fontWeight: "bold", lineHeight: "115.7%", marginLeft: 20, marginBottom: 46}}>Stabila <span style={{color: "#1C5BFF"}}>webbhotell</span> <br /> för din verksamhet</p>
         </div>
@@ -97,7 +97,7 @@ const IndexPage = () => {
           <ServiceCard title="30 dagar pengarna tillbaka" type="triple" content={[<CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>, <CheckOutlined style={{color: "#1C5BFF"}}/>]} />
       </section>
       <section id="wordpress">
-        <div className="title">
+        <div className="title title-third">
           <Image src="line.svg" alt="" style={{marginLeft: 20}}/>
           <p style={{fontSize: 20, fontWeight: "bold", lineHeight: "115.7%", marginLeft: 20, marginBottom: 46}}>Blixtsnabb site <br />med våra optimerade <br />webbhotell för <span style={{color: "#1C5BFF"}}>wordpress</span></p>
         </div>
