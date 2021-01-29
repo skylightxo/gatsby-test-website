@@ -119,8 +119,10 @@ const IndexPage = () => {
       </section>
       <section id="faq">
         <div className="faq__image-container" />
-        <Image src="line.svg" alt="" style={{marginLeft: 20}}/>
-        <p style={{fontSize: 20, fontWeight: "bold", lineHeight: "115.7%", marginLeft: 20, marginBottom: 46}}>Vanliga frågor och svar</p>
+        <div className="title-fourth">
+          <Image src="line.svg" alt="" style={{marginLeft: 20}}/>
+          <p style={{fontSize: 20, fontWeight: "bold", lineHeight: "115.7%", marginLeft: 20, marginBottom: 46}}>Vanliga frågor och svar</p>
+        </div>
         <div className="faq__text-container">
           <p className="faq__heading">Vem behöver wordpress <br /> webbhotell</p>
           <p className="faq__text">Paketen vi tagit fram och anpassat för wordpress är framtagna för mindre verksamheter som vill ha en snabb och tillförlitlig wordpress sida men där ni själva inte har den tekniska kompetens som krävs för en dedikerad server eller VPS. Ett mycket prisvärt alternativ för snabb WordPress helt enkelt.</p>
@@ -143,7 +145,7 @@ const IndexPage = () => {
           <p>Support?</p>
           <p>Ring oss</p>
           <Image src="line.svg" alt="" load="lazy"/>
-          <Image src="boat.png" alt="" style={{width: "25%", marginTop: 5, marginBottom: 31}}/>
+          <Image src="boat.png" quality={100} alt="" style={{width: "25%", marginTop: 5, marginBottom: 31}}/>
           <Image src="line.svg" alt="" />
           <a href="tel:+4655016000">+46 550 16000</a>
         </div>

@@ -638,6 +638,25 @@ footer{
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
+  }
+}
+
+@media(min-width: 920px){
+  html{
     overflow: hidden;
+  }
+  footer{
+    background: none;
+  }
+  .footer__image{
+    background: url('../../images/stones-desktop.png') no-repeat;
+    width: 200%;
+    height: 67%;
+    position: absolute;
+    bottom: 0px;
+    left: 40%;
+  }
+  .footer__text{
+    font-size: 26px;
   }
 }

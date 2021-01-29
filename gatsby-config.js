@@ -47,11 +47,11 @@ module.exports = {
     {
       resolve: "gatsby-plugin-htaccess",
       options: {
-        RewriteBase: true,
+        // RewriteBase: true,
         https: false,
         www: false,
-        SymLinksIfOwnerMatch: true,
-        host: "sveahemsidor.se/", // if 'www' is set to 'false', be sure to also remove it here!
+        // SymLinksIfOwnerMatch: true,
+        // host: "sveahemsidor.se/", // if 'www' is set to 'false', be sure to also remove it here!
         ErrorDocument: `
           ErrorDocument 404 /404/index.html
           `,

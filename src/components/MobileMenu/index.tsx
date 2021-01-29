@@ -2,6 +2,7 @@ import React, { useContext, useState, useEffect } from 'react';
 import { Link } from 'gatsby';
 import './style.scss';
 import {MenuContext} from '../../contexts/MenuContext';
+import Image from '../image';
 
 interface Props{
     state: any;
@@ -25,9 +26,11 @@ export const MobileMenu: React.FC<Props> = ({  }) => {
                     <li onClick={() => setState({menuOpened: false})} className="mobile-menu__link">
                         <Link to="#about">Skapa hemsida</Link>
                     </li>
+                    <Image src="line.svg" alt="" />
                     <li onClick={() => setState({menuOpened: false})} className="mobile-menu__link">
                         <Link to="#webhosting">Webbhotell Standart</Link>
                     </li>
+                    <Image src="line.svg" alt="" />
                     <li onClick={() => setState({menuOpened: false})} className="mobile-menu__link">
                         <Link to="#wordpress">Wordpress Webbhotell</Link>
                     </li>
