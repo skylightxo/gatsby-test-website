@@ -16,6 +16,9 @@
             left: 0;
         }
     }
+    &__image{
+        display: none;
+    }
     &__list{
         list-style-type: none !important; 
         margin: 0;

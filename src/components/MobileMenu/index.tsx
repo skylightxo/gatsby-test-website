@@ -26,11 +26,11 @@ export const MobileMenu: React.FC<Props> = ({  }) => {
                     <li onClick={() => setState({menuOpened: false})} className="mobile-menu__link">
                         <Link to="#about">Skapa hemsida</Link>
                     </li>
-                    <Image src="line.svg" alt="" />
+                    <Image className="mobile-menu__image" src="line.svg" alt="" />
                     <li onClick={() => setState({menuOpened: false})} className="mobile-menu__link">
                         <Link to="#webhosting">Webbhotell Standart</Link>
                     </li>
-                    <Image src="line.svg" alt="" />
+                    <Image className="mobile-menu__image" src="line.svg" alt="" />
                     <li onClick={() => setState({menuOpened: false})} className="mobile-menu__link">
                         <Link to="#wordpress">Wordpress Webbhotell</Link>
                     </li>
