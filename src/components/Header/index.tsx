@@ -13,23 +13,58 @@ export const Header: React.FC<Props> = ({ siteTitle = 'sveahemsidor.' }) => {
   const menuOpened = state.menuOpened;
   
   return(
-    <header style={{background: `${menuOpened ? '#1C5BFF' : 'white'}`}}>
-      <MenuButton />
-      <h1>
-        <Link
-          to="/"
-          style={{
-            display: "flex",
-            color: `${menuOpened ? '#FFA800' : 'black'}`,
-            fontFamily: `Josefin Sans`,
-            textDecoration: `none`,
-            fontWeight: 500,
-            fontSize: 18,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </header>
+    <>
+      <header className="header_mobile" style={{background: `${menuOpened ? '#1C5BFF' : 'white'}`}}>
+        <MenuButton />
+        <h1>
+          <Link
+            to="/"
+            style={{
+              display: "flex",
+              color: `${menuOpened ? '#FFA800' : 'black'}`,
+              fontFamily: `Josefin Sans`,
+              textDecoration: `none`,
+              fontWeight: 500,
+              fontSize: 18,
+            }}
+          >
+            {siteTitle}
+          </Link>
+        </h1>
+      </header>
+      <header className="header_desktop" style={{background: 'white'}}>
+        <div>
+          <h1>
+            <Link
+              to="/"
+              style={{
+                display: "flex",
+                color: "black",
+                fontFamily: `Josefin Sans`,
+                textDecoration: `none`,
+                fontWeight: 500,
+                fontSize: 18,
+              }}
+            >
+              {siteTitle}
+            </Link>
+          </h1>
+        </div>
+        <div style={{display: "flex"}}>
+          <p>
+            <Link className="header__link_desktop" style={{fontSize: 18, color: "black", cursor: "pointer"}} to="#about">Skapa hemsida</Link>
+          </p>
+          <p>
+            <Link className="header__link_desktop" style={{fontSize: 18, color: "black", cursor: "pointer", marginLeft: 20, marginRight: 20}} to="#webhosting">Webbhotell</Link>
+          </p>
+          <p>
+            <Link className="header__link_desktop" style={{fontSize: 18, color: "black", cursor: "pointer", marginRight: 20}} to="#wordpress">Wordpress</Link>
+          </p>
+          <p>
+            <Link className="header__link_desktop" style={{fontSize: 18, color: "black", cursor: "pointer"}} to="#faq">FAQ</Link>
+          </p>
+        </div>
+      </header>
+    </>
   )
 }

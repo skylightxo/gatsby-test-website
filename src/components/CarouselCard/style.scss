@@ -14,9 +14,12 @@
         &__button{
             transition: box-shadow 0.5s;
             &:hover, &:focus{
-                box-shadow: 0px 0px 24px rgba(28, 91, 255, 0.5), 0px 2px 0px rgba(0, 0, 0, 0.016);
+                box-shadow: 0px 0px 10px rgba(28, 91, 255, 0.5), 0px 2px 0px rgba(0, 0, 0, 0.016);
                 transition: box-shadow 0.5s;
             }
+        }
+        &__left-side{
+            padding-left: 10px;
         }
         &__text{
             width: 400px;
