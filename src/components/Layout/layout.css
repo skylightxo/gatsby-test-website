@@ -635,6 +635,12 @@ footer{
   font-size: 14px;
 }
 
+@supports(content-visibility){
+  html{
+    content-visibility: auto;
+  }
+}
+
 @media only screen and (max-width: 480px) {
   html {
     font-size: 100%;
