@@ -34,7 +34,9 @@ function SEO({ description, lang, meta, title }) {
         lang,
       }}
       title={title}
-      titleTemplate={title ? title : defaultTitle ? `%s | ${defaultTitle}` : null}
+      titleTemplate={
+        title ? title : defaultTitle ? `%s | ${defaultTitle}` : null
+      }
       meta={[
         {
           name: `description`,
@@ -51,6 +53,26 @@ function SEO({ description, lang, meta, title }) {
         {
           property: `og:type`,
           content: `website`,
+        },
+        {
+          property: `og:image`,
+          content: `https://sveahemsidor.se/static/2f30fb613349e2934ff1ebfc8b323f67/First-carousel-bg.png`,
+        },
+        {
+          property: `og:image:secure_url`,
+          content: `https://sveahemsidor.se/static/2f30fb613349e2934ff1ebfc8b323f67/First-carousel-bg.png`,
+        },
+        {
+          property: `og:image:alt`,
+          content: `Bästa Svenska Hemsidor!`,
+        },
+        {
+          property: `og:image:width`,
+          content: `685`,
+        },
+        {
+          property: `og:image:height`,
+          content: `583`,
         },
         {
           name: `twitter:card`,
