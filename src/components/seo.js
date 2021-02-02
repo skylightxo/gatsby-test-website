@@ -26,25 +26,22 @@ function SEO({ description, lang, meta, title }) {
   )
 
   const metaDescription = description || site.siteMetadata.description
-  const defaultTitle = site.siteMetadata?.title
 
   return (
     <Helmet
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={
-        title ? title : defaultTitle ? `%s | ${defaultTitle}` : null
-      }
+      title={`Sveahemsidor - svensktillverkade webbplatser.`}
+      titleTemplate={`Sveahemsidor - svensktillverkade webbplatser.`}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: `Få din egen hemsida med webbhotell nu.`,
         },
         {
           property: `og:title`,
-          content: title,
+          content: `Sveahemsidor - bästa svenska hemsidor!`,
         },
         {
           property: `og:description`,
